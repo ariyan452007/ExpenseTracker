@@ -55,7 +55,7 @@ const seedDatabase = async () => {
     const user = await User.create({
       name: "Demo User",
       email: "demo@example.com",
-      password: "placeholder-not-hashed",
+      password: "Demo@1234",
     });
 
     // Create Categories
