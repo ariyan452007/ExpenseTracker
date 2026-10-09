@@ -12,6 +12,8 @@ app.get("/api/health", (req, res) => {
 });
 
 app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/transactions", require("./routes/transactionRoutes"));
+app.use("/api/categories", require("./routes/categoryRoutes"));
 
 app.use(notFound);
 app.use(errorHandler);
